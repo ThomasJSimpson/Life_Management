@@ -5,6 +5,30 @@
   text-align: center;
 }
 
+.fact-container {
+  min-height: 15rem; /* Assurez-vous que la hauteur reste constante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marg-b {
+  margin-bottom: 3rem;
+}
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -22,6 +46,21 @@
   from {
     transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
